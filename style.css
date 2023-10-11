@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/* setting variable colors */
+:root {
+    --overlay-color: #AF9F96;
+    --background-color: #FAEEE4;
+}
+
+/* tip: using asterick below bacially selects everything */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+
+
+/* basics of each page */
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #111;
+    z-index: 2;
+    transition: 0.3s;
+}
+/* tip: z-index is layers on page */
+
+/* main page of index  */
+#indexShowcase {
+    flex-direction: row;
+    background: #111;
+    color: #fff;
+}
+
+/* when navigation sidebar opened: moves main page to side */
+.showcase.active {
+    right: 300px;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* add in logo image here */
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    /*cursor: pointer;*/
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* unvisited link */
+a:link {
+    color: #fff;
+}
+
+/* visited link */
+a:visited {
+    color: #fff;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
+
+/* navigation button basics */
+.toggle {
+    position: relative;
+    filter: invert(1);
+    width: 60px;
+    height: 60px;
+    background: url('img/navigation.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* #indexToggle {
+    filter: invert(1);
+} */
+
+/* when navigation button is clicked */
+    .toggle.active {
+        background: url('img/close.png');
+        filter: invert(1);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.5s;
+    }
+
+/* #background { */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: -100;
+}
+
+#indexBackground {
+    opacity: 0.8;
+}
+
+#menuBackground {
+    height: 35%;
+    z-index: -200;
+}
+
+#menuHeader {
+    opacity: 0.8;
+    height: 35%;
+}
+
+#contactBackground {
+    height: 25%;
+}
+
+#contactHeader {
+    height: 25%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    mix-blend-mode: overlay;
+}
+
+#menuOverlay {
+    height: 35%;
+    z-index: 100;
+}
+
+#contactOverlay {
+    height: 25%;
+    z-index: 100;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+/* em multiplies parent by that number */
+.text h2 {
+    font-size: 8em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.text h2:hover {
+     -webkit-text-stroke: 1px #fff;
+     color: transparent;
+ }
+
+
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+    .text h3:hover {
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        transition: 0.5s;
+    }
+
+
+
+.text h4 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+    .text p:hover {
+        font-style: italic;
+    }
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: var(--overlay-color);
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    border-radius: 40px;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.contactText {
+    margin-top: 200px;
+}
+
+/* i dont know what is happening with this below (supposed to be for separating filter choices in the menu)*/
+.filters {
+    margin-top: 49px;
+    max-width: 100%;
+    overflow-x: auto;
+
+    display: flex;
+    justify-content: left;
+    gap: 24px;
+
+    flex-wrap: wrap;
+}
+
+.filterButton {
+    padding: 10px 28px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px #111 solid;
+    border-radius: 46px;
+    background-color: none;
+    
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 25px;
+    color: #111;
+    cursor: pointer;
+}
+
+/* tried to do flexbox for products in the menu */
+.goods {
+    /* position: absolute; */
+    margin-top: 50px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 1em;
+}
+
+.good {
+    padding: 7px 16px;
+    border: 1px #111 solid; 
+    border-radius: 50px;
+    /* flex-basis: 5; */
+    width: 500px;
+    height: 200px;
+}
+.goods > * {
+    flex: 1;
+}
+
+/* social media icons on each page */
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+#indexSocial {
+    filter: invert(1);
+}
+
+.social li a:hover {
+    transform: scale(0.5) translateY(-20px);
+}
+
+/* stuff on contact page below */
+/* .hours {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.hours {
+    margin-bottom: 50px;
+}
+
+.hours li {
+    list-style: none;
+    margin-top:20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.navigation ul {
+    position: relative;
+    list-style: none;
+    line-height: 2;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+
+.navigation ul li a:hover {
+    color: var(--overlay-color);
+    padding: 7px 16px;
+    border: 1px var(--overlay-color) solid; 
+    border-radius: 50px;
+}
+
+/* to adjust to smaller screens */
+@media(max-width: 891px){
+    .showcase, 
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+
+    .text h4 {
+        font-size: 1em;
+    }
+}
