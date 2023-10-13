@@ -4,7 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Soon's Bakery Landing Page</title>
+    <title>Soon's Bakery Johns Creek GA</title>
+    <link rel="icon" href="img/soonsfavicon.png">
+    <style>
+
+        .container {
+            display: flex;
+            transform: scale(1.2);
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            margin-top: 70px;
+            margin-bottom: 20px;
+            margin-right: 100px;
+            margin-left: 100px;
+            background-color: none;
+            cursor: pointer;
+            /*text-decoration: underline;*/
+            flex-wrap: wrap;
+        }
+
+            nav a {
+                padding: 10px;
+            }
+
+                nav a:hover {
+                    transform: translateY(2px);
+                    font-weight: bold;
+                    transition: .1s;
+                }
+
+        main div {
+            display: none;
+            padding: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+
 </head>
 <body>
     <section class="showcase" id="menuShowcase">
@@ -23,70 +64,257 @@
             <h2>Menu</h2>
         </div>
 
-        <div class="filters">
-            <button class="filterButton">All</button>
-            <button class="filterButton">Breads</button>
-            <button class="filterButton">Cakes</button>
-            <button class="filterButton">Drinks</button>
+        <div class="container">
+            <nav>
+                <a data-id="1">All</a>
+                <a data-id="2">Loaf Breads</a>
+                <a data-id="3">Breads</a>
+                <a data-id="4">Cookies</a>
+                <a data-id="5">Pastries & Treats</a>
+                <a data-id="6">Cakes</a>
+                <a data-id="7">Sandwiches</a>
+                <a style="color:black" href="#beveragemenu">Beverages</a>
+            </nav>
         </div>
-        
-        <div class="goods">
-            <div class="good">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <h2>Bread</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloremque placeat quam cumque reprehenderit consectetur. Totam obcaecati dignissimos dolore. Asperiores.
+
+        <main>
+            <!-- All -->
+            <div class="active">
+                <!-- <center><h2 style="transform: scale(1.2); padding:15px">Bakery Menu</h2></center>-->
+                <center><h2>Loaf Breads</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Apgujung-Bread-SOONS-BAKERY.jpg"><center><img src="img/Apgujung-Bread-SOONS-BAKERY.jpg" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Apgujung-Bread-SOONS-BAKERY.webp"><h2>Apgujung Bread</h2></a>
+                        sweet milk bread with green bean paste, red bean paste, tapioca and cream cheese
+                    </li>
+                    <li class="good">
+                        <a href="img/Apple-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Apple-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Apple-Bread-2.0-SOONS-BAKERY.webp"><h2>Apple Bread</h2></a>
+                        soft milk bread filled with apples and jam
+                    </li>
+                    <li class="good">
+                        <a href="img/Blueberry-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Blueberry-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Blueberry-Bread-2.0-SOONS-BAKERY.webp"><h2>Blueberry Bread</h2></a>
+                        soft milk bread filled with blueberries and jam
+                    </li>
+                    <li class="good">
+                        <a href="img/Cheese-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Cheese-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Cheese-Bread-2.0-SOONS-BAKERY.webp"><h2>Cheese Bread</h2></a>
+                        milk bread with white cheese swirled inside
+                    </li>
+                    <li class="good">
+                        <a href="img/Chestnut-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Chestnut-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chestnut-Bread-2.0-SOONS-BAKERY.webp"><h2>Chestnut Bread</h2></a>
+                        soft milk bread with sweet roasted chestnuts inside
+                    </li>
+                    <li class="good">
+                        <a href="img/Chocolate-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Chocolate-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chocolate-Bread-2.0-SOONS-BAKERY.webp"><h2>Chocolate Bread</h2></a>
+                        soft milk bread with chocolate swirls and semisweet chocolate chips
+                    </li>
+                    <li class="good">
+                        <a href="img/Cinnamon-Loaf-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Cinnamon-Loaf-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Cinnamon-Loaf-Bread-2.0-SOONS-BAKERY.webp"><h2>Cinnamon Loaf Bread</h2></a>
+                        soft milk bread swirled with cinnamon and walnuts
+                    </li>
+                </ul>
+
+                <center><h2>Breads</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Almond-Soboro-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Almond-Soboro-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Almond-Soboro-Bread-2.0-SOONS-BAKERY.webp"><h2>Almond Soboro Bread</h2></a>
+                        sweet bread baked with a peanut streusel on top
+                    </li>
+                    <li class="good">
+                        <a href="img/Croque-Monsieur-2.0-SOONS-BAKERY.webp"><center><img src="img/Croque-Monsieur-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Croque-Monsieur-2.0-SOONS-BAKERY.webp"><h2>Croque Monsieur</h2></a>
+                        ham and cheese sandwich with corn, onions, and a sweet, creamy sauce
+                    </li>
+                </ul>
+
+                <center><h2>Cookies</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Chocolate-Smore-Cookie-2.0-SOONS-BAKERY.webp"><center><img src="img/Chocolate-Smore-Cookie-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chocolate-Smore-Cookie-2.0-SOONS-BAKERY.webp"><h2>Chocolate Smore Cookie</h2></a>
+                        a delectable chocolate cookie with a toasted marshmallow and an oreo
+                    </li>
+                    <li class="good">
+                        <a href="img/Earl-Grey-Salted-Caramel-Cookie-2.0-SOONS-BAKERY.webp"><center><img src="img/Earl-Grey-Salted-Caramel-Cookie-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Earl-Grey-Salted-Caramel-Cookie-2.0-SOONS-BAKERY.webp"><h2>Earl-Grey Salted Caramel Cookie</h2></a>
+                        the perfect coffee cookie, caramel and a hint of earl-grey
+                    </li>
+                </ul>
+
+
+                <center><h2>Pastries & Treats</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/SOONS_BAKERY_IconStore1.0_Clr_1080px_09302022.webp"><center><img src="img/SOONS_BAKERY_IconStore1.0_Clr_1080px_09302022.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/SOONS_BAKERY_IconStore1.0_Clr_1080px_09302022.webp"><h2>Ang Butter Bread</h2></a>
+                        a popular korean sandwich trend with red bean paste and butter
+                    </li>
+                    <li class="good">
+                        <a href="img/Basque-Cheescake-1-SOONS-BAKERY-1.webp"><center><img src="img/Basque-Cheescake-1-SOONS-BAKERY-1.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Basque-Cheescake-1-SOONS-BAKERY-1.webp"><h2>Basque Cheesecake</h2></a>
+                        a twist on the basic cheesecake, the top is torched resulting in a caramelized crust
+                    </li>
+                </ul>
+
+                <center><h2>Cakes</h2></center>
+                <center>*CAKES MUST BE ORDERED AT LEAST 3 DAYS IN ADVANCE*</center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Blueberry-Yogurt-Cake-3-SOONS-BAKERY-1.webp"><center><img src="img/Blueberry-Yogurt-Cake-3-SOONS-BAKERY-1.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Blueberry-Yogurt-Cake-3-SOONS-BAKERY-1.webp"><h2>Blueberry Fresh Cream Cake</h2></a>
+                        a yogurt-based fresh cream cake with blueberries
+                    </li>
+                    <li class="good">
+                        <a href="img/Chocolate-Fresh-Cream-Cake-4-SOONS-BAKERY-1.webp"><center><img src="img/Chocolate-Fresh-Cream-Cake-4-SOONS-BAKERY-1.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chocolate-Fresh-Cream-Cake-4-SOONS-BAKERY-1.webp"><h2>Chocolate Fresh Cream Cake</h2></a>
+                        chocolate cake with a lighter chocolate whipped cream
+                    </li>
+                </ul>
+
+                <center><h2>Sandwiches</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Chicken-Salad-Sandwich-2.0-SOONS-BAKERY.webp"><center><img src="img/Chicken-Salad-Sandwich-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chicken-Salad-Sandwich-2.0-SOONS-BAKERY.webp"><h2>Chicken Salad Sandwich</h2></a>
+                        chicken salad sandwich with cheese, lettuce and tomatoes
+                    </li>
+                    <li class="good">
+                        <a href="img/Club-Sandwich-2.0-SOONS-BAKERY.webp"><center><img src="img/Club-Sandwich-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Club-Sandwich-2.0-SOONS-BAKERY.webp"><h2>Club Sandwich</h2></a>
+                        the classic lettuce, tomato, ham and cheese sandwich
+                    </li>
+                </ul>
+
+
             </div>
 
-            <div class="good">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <h2>Cake</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloremque placeat quam cumque reprehenderit consectetur. Totam obcaecati dignissimos dolore. Asperiores.
+            <!-- Loaf Bread -->
+            <div>
+                <center><h2>Loaf Breads</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Blueberry-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Blueberry-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Blueberry-Bread-2.0-SOONS-BAKERY.webp"><h2>Blueberry Bread</h2></a>
+                        soft milk bread filled with blueberries and jam
+                    </li>
+                    <li class="good">
+                        <a href="img/Cheese-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Cheese-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Cheese-Bread-2.0-SOONS-BAKERY.webp"><h2>Cheese Bread</h2></a>
+                        milk bread with white cheese swirled inside
+                    </li>
+                </ul>
             </div>
 
-            <div class="good">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <h2>Drinks</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloremque placeat quam cumque reprehenderit consectetur. Totam obcaecati dignissimos dolore. Asperiores.
+            <!-- Breads -->
+
+            <div>
+                <center><h2>Breads</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Almond-Soboro-Bread-2.0-SOONS-BAKERY.webp"><center><img src="img/Almond-Soboro-Bread-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Almond-Soboro-Bread-2.0-SOONS-BAKERY.webp"><h2>Almond Soboro Bread</h2></a>
+                        sweet bread baked with a peanut streusel on top
+                    </li>
+                    <li class="good">
+                        <a href="img/Croque-Monsieur-2.0-SOONS-BAKERY.webp"><center><img src="img/Croque-Monsieur-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Croque-Monsieur-2.0-SOONS-BAKERY.webp"><h2>Croque Monsieur</h2></a>
+                        ham and cheese sandwich with corn, onions, and a sweet, creamy sauce
+                    </li>
+                </ul>
             </div>
 
-            <div class="good">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <h2>Bread</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloremque placeat quam cumque reprehenderit consectetur. Totam obcaecati dignissimos dolore. Asperiores.
+            <!-- Cookies -->
+
+            <div>
+                <center><h2>Cookies</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Chocolate-Smore-Cookie-2.0-SOONS-BAKERY.webp"><center><img src="img/Chocolate-Smore-Cookie-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chocolate-Smore-Cookie-2.0-SOONS-BAKERY.webp"><h2>Chocolate Smore Cookie</h2></a>
+                        a delectable chocolate cookie with a toasted marshmallow and an oreo
+                    </li>
+                    <li class="good">
+                        <a href="img/Earl-Grey-Salted-Caramel-Cookie-2.0-SOONS-BAKERY.webp"><center><img src="img/Earl-Grey-Salted-Caramel-Cookie-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Earl-Grey-Salted-Caramel-Cookie-2.0-SOONS-BAKERY.webp"><h2>Earl-Grey Salted Caramel Cookie</h2></a>
+                        the perfect coffee cookie, caramel and a hint of earl-grey
+                    </li>
+                </ul>
             </div>
 
-            <div class="good">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <h2>Bread</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloremque placeat quam cumque reprehenderit consectetur. Totam obcaecati dignissimos dolore. Asperiores.
+            <!-- Pastries & Treats -->
+
+            <div>
+                <center><h2>Pastries & Treats</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/SOONS_BAKERY_IconStore1.0_Clr_1080px_09302022.webp"><center><img src="img/SOONS_BAKERY_IconStore1.0_Clr_1080px_09302022.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/SOONS_BAKERY_IconStore1.0_Clr_1080px_09302022.webp"><h2 style="color:black">Ang Butter Bread</h2></a>
+                        a popular korean sandwich trend with red bean paste and butter
+                    </li>
+                    <li class="good">
+                        <a href="img/Basque-Cheescake-1-SOONS-BAKERY-1.webp"><center><img src="img/Basque-Cheescake-1-SOONS-BAKERY-1.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Basque-Cheescake-1-SOONS-BAKERY-1.webp"><h2 style="color:black">Basque Cheesecake</h2></a>
+                        a twist on the basic cheesecake, the top is torched resulting in a caramelized crust
+                    </li>
+                </ul>
             </div>
 
-            <div class="good">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <h2>Bread</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloremque placeat quam cumque reprehenderit consectetur. Totam obcaecati dignissimos dolore. Asperiores.
+            <!-- Cakes -->
+
+            <div>
+                <center><h2>Cakes</h2></center>
+                <center>*CAKES MUST BE ORDERED AT LEAST 3 DAYS IN ADVANCE*</center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Blueberry-Yogurt-Cake-3-SOONS-BAKERY-1.webp"><center><img src="img/Blueberry-Yogurt-Cake-3-SOONS-BAKERY-1.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Blueberry-Yogurt-Cake-3-SOONS-BAKERY-1.webp"><h2>Blueberry Fresh Cream Cake</h2></a>
+                        a yogurt-based fresh cream cake with blueberries
+                    </li>
+                    <li class="good">
+                        <a href="img/Chocolate-Fresh-Cream-Cake-4-SOONS-BAKERY-1.webp"><center><img src="img/Chocolate-Fresh-Cream-Cake-4-SOONS-BAKERY-1.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chocolate-Fresh-Cream-Cake-4-SOONS-BAKERY-1.webp"><h2>Chocolate Fresh Cream Cake</h2></a>
+                        chocolate cake with a lighter chocolate whipped cream
+                    </li>
+                </ul>
+                <center>*CAKE DECORATION MAY BE DIFFERENT THAN PICTURE*</center>
             </div>
 
-            <div class="good">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <h2>Bread</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloremque placeat quam cumque reprehenderit consectetur. Totam obcaecati dignissimos dolore. Asperiores.
+            <!-- Sandwiches -->
+
+            <div>
+                <center><h2>Sandwiches</h2></center>
+                <ul class="goods">
+                    <li class="good">
+                        <a href="img/Chicken-Salad-Sandwich-2.0-SOONS-BAKERY.webp"><center><img src="img/Chicken-Salad-Sandwich-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Chicken-Salad-Sandwich-2.0-SOONS-BAKERY.webp"><h2>Chicken Salad Sandwich</h2></a>
+                        chicken salad sandwich with cheese, lettuce and tomatoes
+                    </li>
+                    <li class="good">
+                        <a href="img/Club-Sandwich-2.0-SOONS-BAKERY.webp"><center><img src="img/Club-Sandwich-2.0-SOONS-BAKERY.webp" width="200" alt="Apgujung Bread"></center></a>
+                        <a href="img/Club-Sandwich-2.0-SOONS-BAKERY.webp"><h2>Club Sandwich</h2></a>
+                        the classic lettuce, tomato, ham and cheese sandwich
+                    </li>
+                </ul>
             </div>
+
+
+        </main>
+
+        <!-- beverages -->
+
+        <div id="beveragemenu">
+            <center><h2 style:"margin:80px">Beverages</h2></center>
+            <center><img style="width:80%; border-radius:50px; margin: 50px" src="img/beveragessignboard.jpg" alt=""></center>
         </div>
+
+
 
         <ul class="social">
             <li><a href="https://www.facebook.com/profile.php?id=100069216371489"><img src="img/facebook.png" alt=""></a></li>
@@ -96,14 +324,59 @@
 
     <div class="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>  
-            <li><a href="about.html">About</a></li>  
-            <li><a href="menu.html">Menu</a></li>  
-            <li><a href="gallery.html">Photos</a></li>  
-            <li><a href="contact.html">Contact</a></li>   
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
-    <script src="script.js"></script>
+    <!--
+        <script src="script.js"></script>
+
+    <script type="text/javascript">
+        const navigationToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        navigationToggle.addEventListener('click', () => {
+            navigationToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+        document.querySelectorAll('nav a')
+            .forEach(e => e.addEventListener('click', _ => change(e.dataset.id)));
+
+        function change(n) {
+            let panels = document.querySelectorAll('main div');
+            panels.forEach(p => p.classList.remove('active'));
+            panels[n - 1].classList.add('active');
+        }
+    </script>
+    -->
+
+    <script type="text/javascript">
+
+        document.querySelectorAll('nav a')
+            .forEach(e => e.addEventListener('click', _ => change(e.dataset.id)));
+
+        function change(n) {
+            let panels = document.querySelectorAll('main div');
+            panels.forEach(p => p.classList.remove('active'));
+            panels[n - 1].classList.add('active');
+        }
+
+
+        const navigationToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        navigationToggle.addEventListener('click', () => {
+            navigationToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+
+    </script>
+
 </body>
-</html>
+</html >

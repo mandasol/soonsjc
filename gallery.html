@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Soon's Bakery Landing Page</title>
+    <title>Soon's Bakery Johns Creek GA</title>
+    <link rel="icon" href="img/soonsfavicon.png">
     <style>
 
         .headlogo {
@@ -13,41 +14,50 @@
             color: #fff;
             position: fixed;
             top: 7%;
-            left:6%;
+            left: 6%;
             z-index: 2;
             text-align: left;
         }
+
+            .headlogo :hover {
+                opacity: 70%;
+            }
+
 
         .scroll {
             text-transform: uppercase;
             text-decoration: none;
             color: black;
             position: fixed;
-            top: 7%;
+            bottom: 4%;
             Right: 6%;
             z-index: 2;
             text-align: right;
+            transition: 0.5s;
         }
 
-        @keyframes wiggle {
+        @keyframes bounce {
             0% {
-                transform: rotate(0deg);
+                transform: translateY(0%);
+            }
+
+            50% {
+                transform: translateY(-100%);
             }
 
             100% {
-                transform: rotate(360deg);
+                transform: translateY(0);
             }
         }
 
+
         .scroll {
-            display: inline-block;
-            animation: wiggle 2s;
-            animation: wiggle 2s;
+            animation: bounce 1.5s 5;
         }
 
-        .scroll:hover {
-            animation: wiggle 1s infinite;
-        }
+            .scroll:hover {
+                animation: bounce 1.5s infinite;
+            }
 
         body, html {
             height: 100%;
@@ -57,7 +67,6 @@
         }
 
         .bg-image {
-    
             top: 0;
             left: 0;
             width: 100%;
@@ -65,7 +74,6 @@
             object-fit: cover;
             opacity: 1;
             z-index: -100;
-
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -73,82 +81,82 @@
             background-origin: border-box;
             scroll-snap-align: start;
         }
+
         .img1 {
             background-image: url("img/image_24.JPG");
         }
+
         .img2 {
             background-image: url("img/image_13.JPG");
         }
+
         .img3 {
             background-image: url("img/image_12.JPG");
         }
+
         .img4 {
             background-image: url("img/image_19.JPG");
         }
+
         .img5 {
             background-image: url("img/image_1.JPG");
         }
+
         .img6 {
             background-image: url("img/image_15.JPG");
         }
+
         .img7 {
             background-image: url("img/image_16.JPG");
         }
+
         .img8 {
             background-image: url("img/image_3.JPG");
         }
+
         .img9 {
             background-image: url("img/image_4.JPG");
         }
+
         .img10 {
             background-image: url("img/image_20.JPG");
         }
+
         .img11 {
-            background-image: url("img/image_17.JPG");
+            background-image: url("img/image_18.JPG");
         }
+
         .img12 {
-            background-image: url("img/image_20.JPG");
+            background-image: url("img/image_23.JPG");
         }
+
         .img13 {
             background-image: url("img/image_5.JPG");
         }
+
         .img14 {
-            background-image: url("img/image_8.JPG");
+            background-image: url("img/matcha.JPG");
         }
+
         .img15 {
-            background-image: url("img/image_23.JPG");
+            background-image: url("img/image_21.JPG");
         }
+
         .img16 {
-            background-image: url("img/image_25.JPG");
+            background-image: url("img/image_17.JPG");
         }
+
         .img17 {
             background-image: url("img/image_10.JPG");
         }
+
         .img18 {
             background-image: url("img/image_11.JPG");
         }
-
-
-
-
-
     </style>
 </head>
 <body>
 
-
-    <!--
-        <section class="showcase" id="indexShowcase">
-            <header>
-
-                <div class="toggle" id="indexToggle"></div>
-            </header>
-
-            <img class="background" id="indexBackground" src="img/canele.jpg" alt=""></img>
-        <div><img class="bg-image img1" src="img/image_20.JPG" alt="" /> </div>
-        <div><img class="bg-image img1" src="img/image_4.JPG" alt="" /> </div>
-        <div><img class="bg-image img1" src="img/image_3.JPG" alt="" /> </div>
-        <div><img class="bg-image img1" src="img/image_16.JPG" alt="" /> </div>-->
 
     <div>
         <h2 class="headlogo"><a href="index.html">Soon's Bakery and Cafe</a></h2>
@@ -181,7 +189,7 @@
     </section>
 
     <div>
-        <h2 class="scroll" >Scroll Down</h2>
+        <h2 class="scroll" >Scroll</h2>
     </div>
 
     <div class="navigation">
