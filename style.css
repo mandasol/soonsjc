@@ -441,7 +441,7 @@ a:active {
 @media(max-width: 891px){
     .showcase,
     .showcase header {
-        padding: 40px;
+        padding: 20px;
     }
 
     .text h2 {
